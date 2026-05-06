@@ -38,8 +38,6 @@ The Excel file contains the following sheets:
 
 ## 📊 Power BI Dashboard – What It Shows (One Page)
 
-![Dashboard Preview](Screenshot%202026-05-06%20234220.png)  
-*(Add your screenshot file to the repo)*
 
 The final interactive dashboard includes:
 
@@ -125,8 +123,8 @@ CALCULATE(
     SUM('Trail Balance'[Sum of Balance]),
     'Trail Balance'[Label to FS] = "Balance Sheet",
     'Trail Balance'[Sum of Balance] < 0
-) * -1
-
+) * -1```
+```
 ### 4. Build the Visuals (Arrange on One Page)
 Use the following visual types and field assignments:
 
@@ -139,7 +137,7 @@ Clustered Column Chart (Assets)	X‑axis = Account (filter Sum of Balance > 0 an
 Clustered Column Chart (Liabilities & Equity)	X‑axis = Account (filter Sum of Balance < 0 and Label to FS = "Balance Sheet"), Y‑axis = Liability Balance (measure)
 Treemap	Group = Account (filter Sub-Account = "Expense"), Values = Expense Amount
 Waterfall Chart (optional)	Category = Account (Income Statement in order), Measure = Sum of Balance (or Expense Amount for expenses with sign adjustment)
-5. Apply Filters (Crucial for Correctness)
+### 5. Apply Filters (Crucial for Correctness)
 For P&L Bar Chart: Visual‑level filter Label to FS = "Income Statement"
 
 For Expense Treemap: Visual‑level filter Sub-Account = "Expense"
@@ -148,7 +146,7 @@ For Assets Column Chart: Visual‑level filter Sum of Balance > 0 AND Label to F
 
 For Liabilities & Equity Column Chart: Visual‑level filter Sum of Balance < 0 AND Label to FS = "Balance Sheet"
 
-6. Format for Professional Look
+#### 6. Format for Professional Look
 Numbers: Format as PKR 0,, M (e.g., 1.2M) for cards and axes
 
 Net Profit Card: Conditional formatting – green if positive
@@ -157,7 +155,7 @@ Background: Light gray or white
 
 Title: Add a text box at top: PLPL Financial Dashboard
 
-📈 Key Insights from the Dashboard
+##### 📈 Key Insights from the Dashboard
 Metric	Value
 Total Revenue	PKR 1,225,000
 Net Profit	PKR 332,500
@@ -166,7 +164,7 @@ Largest Expense	Cost of Goods Sold (PKR 490,000)
 Largest Asset	Cash (PKR 4,425,000)
 Total Assets	PKR 6,225,000
 Total Liabilities + Equity	PKR 6,225,000 (balances)
-🛠️ How to Replicate This Project
+#### 🛠️ How to Replicate This Project
 Clone this repository
 
 Download the Excel file (Copy of Financial analyst final.xlsx)
@@ -179,7 +177,7 @@ Create measures and visuals as described
 
 Arrange on one page and publish to Power BI Service (optional)
 
-📚 Learning Outcomes
+#### 📚 Learning Outcomes
 By completing this project, you will learn:
 
 How to clean Excel data for Power BI (remove formulas, fix headers, handle typos)
@@ -199,9 +197,3 @@ Skills demonstrated: Power BI, DAX, Excel, Financial Accounting, Data Visualizat
 
 📄 License
 This project is for educational and portfolio purposes. You may use and modify it freely.
-
-text
-
----
-
-Just copy the above text into your `README.md` file on GitHub. It includes everything: project description, file structure, cleaning steps, DAX measures, visual setup, filters, insights, and replication guide. Add your screenshot (`Screenshot 2026-05-06 234220.png`) to the repo and the image will appear.
